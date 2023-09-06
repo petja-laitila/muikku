@@ -1,7 +1,6 @@
 name: Snapshot deploy
 on: 
-  push:
-    branches: [devel]
+  push: workflow_dispatch
 jobs:
   deploy-snapshot:
     env:
