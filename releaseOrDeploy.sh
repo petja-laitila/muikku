@@ -7,6 +7,7 @@ git config --global user.email "github-actions[bot]@users.noreply.github.com"
 git config --global pull.rebase false
 # Push one branch at a time.
 git config --global push.default simple
+git pull
 git checkout devel
 git reset --hard
 git pull
