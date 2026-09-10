@@ -7,6 +7,7 @@ git config --global user.email "github-actions[bot]@users.noreply.github.com"
 git config --global pull.rebase false
 # Push one branch at a time.
 git config --global push.default simple
+git pull
 git checkout devel
 git reset --hard
 git pull
@@ -17,6 +18,6 @@ git commit -m "Updated dependency versions"
 echo Replacing releases to SNAPSHOTS
 mvn versions:use-latest-snapshots -Dincludes=fi.otavanopisto.pyramus:*
 git add .
-git commit -m "Updated latest snapshot releases"
+git commit -m "Updated latest snapshott releases"
 git pull
 git push
